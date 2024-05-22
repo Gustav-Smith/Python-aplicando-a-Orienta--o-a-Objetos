@@ -6,6 +6,10 @@ class Restaurante:
         self.capacidade = capacidade
         self.nota_avaliacao = nota_avaliacao
 
-restaurante_exemplo = Restaurante(nome='Comida Boa', categoria='Gourmet', ativo=True, capacidade=50, nota_avaliacao=4.5)
+    def __str__(self):
+        return f'{self.nome} | {self.categoria}'
+
+restaurante_formatado = Restaurante(nome='Bom Sabor', categoria='Tradicional')
+print(restaurante_formatado)
 
 
